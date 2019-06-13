@@ -1,1 +1,2 @@
 # ApplicationWeb
+Este repositorio tem como objetivo a exposição de uma serie de estudos que farei relacionado a Front-end, irei postar aqui o todo o resultado de meus estudos, conforme irei avançando nos estudos irei atualizar o projeto tanto pelo proprio Git quanto pela plataforma Github para que esteja disponivel a todos.
