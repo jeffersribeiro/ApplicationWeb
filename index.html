@@ -2,6 +2,8 @@
 <html lang="pt-br">
 
 <head>
+    <script src="https://kit.fontawesome.com/6a8bbf3b28.js"></script>
+    <link rel="stylesheet" href="./Estilos/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,7 +12,32 @@
 
 <body>
     <div class='container'>
+        <a class="btnMenu" href="#"><i class="fas fa-align-justify"></i></a>
+        <a class="btnLogin" href="#"><i class="fas fa-sign-in-alt"></i> Logout</a>
+    </div>
+    <div class="tagsPage">
+        <div class="tagsTitle">
+            <h2>Tags&nbsp
+                <h6 class="tagDescription"> All tags in the database</h6>
+            </h2>
+        </div>
+        <div class="DateShow">
+            <div class="containerAddBtn">
+                <button class="btnAddTag"><i class="fas fa-plus"></i> Add tag</button>
+            </div>
+            <div class="pageCountContainer">
+                <input class="pageCount" type="number">
+                <p>records per page</p>
+            </div>
+            <div class="inputPesquisa">
+                <p>Search:&nbsp</p>
+                <input type="text" placeholder="Pesquisa">
+            </div>
+            <label class="nameCollum" for="name">Name</label>
+            <label class="nameCollum" for="slug">Slug</label>
+            <label class="nameCollum" for="action">Action</label>
 
+        </div>
     </div>
 </body>
 
