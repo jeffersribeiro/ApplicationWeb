@@ -1,5 +1,5 @@
 //Neste exercicio temos os tipos de Variaverias e como expecificar o seu tipo
-
+/*
 const valor1 = Number(0)
 const valor2 = Number(2)
 const valor3 = Boolean(2)
@@ -36,4 +36,13 @@ console.log(result)
 const valor = '5,5'
 let array = valor.split(',')
 
-array
+var result = Number(array[0]) + Number(array[1])
+console.log(result)
+
+
+*/
+//pode ser assim.
+let valor = 'Ana, Maria , João'.split(',')
+console.log(valor[0])
+    //Ou assim
+console.log('Ana, Maria, João'.split(',')[0])
