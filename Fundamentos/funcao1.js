@@ -11,8 +11,13 @@ imprimirSoma(2, null)
 imprimirSoma(2, 2, 5, 3, 4, 2) // o Resto ele vai ignorar.
 imprimirSoma(Infinity, Infinity)
 imprimirSoma()
-
-function soma(a = 2, b = 3) {
+    //função com retorno
+function soma(a = 0, b = 0) { //valor predefinido quando não se passa o valor
     return a + b
 }
-console.log(soma())
+console.log(soma(2))
+
+// função Arrow
+const valor = (valor1, valor2) => result = valor1 + valor2
+
+console.log(valor(2, 2))
