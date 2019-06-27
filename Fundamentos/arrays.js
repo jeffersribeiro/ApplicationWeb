@@ -24,6 +24,9 @@ valores.push({
         nome: 'jefferson'
     },
     null, Infinity, 'Teste', 10)
+
 console.log(`O ID do Aluno é: ${valores[0].id}\ne o Nome: ${valores[0].nome}`)
 
-console.log(valores.pop(2))
+console.log(valores.pop())
+delete valores[2]
+console.log(valores)
