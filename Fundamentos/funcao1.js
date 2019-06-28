@@ -21,3 +21,7 @@ console.log(soma(2))
 const valor = (valor1, valor2) => result = valor1 + valor2
 
 console.log(valor(2, 2))
+
+//retorno implicito
+console.log('Aqui!!')
+const subtracao = (a, b) => a - b
