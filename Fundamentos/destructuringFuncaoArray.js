@@ -17,3 +17,7 @@ function rand([min = 0, max = 1000]) {
 const obj = [min, max] = [10, 45]
 console.log(rand(obj))
 console.log(rand([0, 99]))
+console.log(rand([0, 99]))
+console.log(rand([]))
+console.log(rand([99]))
+console.log(rand([]))
