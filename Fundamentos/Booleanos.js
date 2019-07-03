@@ -30,5 +30,3 @@ console.log('\n', !!0) //numero Zero
 let nome = 'Lucas'
 console.log(nome || 'Desconhecido')
 console.log(nome == true ? 'Verdadeiro' : 'Falso')
-
-con
