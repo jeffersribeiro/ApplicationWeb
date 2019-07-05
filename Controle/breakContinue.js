@@ -14,6 +14,7 @@ for (let y in nums) {
     }
     console.log(`numero: ${nums[y]}, posição X: ${y}`)
 }
+
 */
 const nums = [1.3, 2.5, 3.2, 4.9, 5.6, 6.7, 7.0, 8.7, 9.4]
 
