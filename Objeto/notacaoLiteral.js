@@ -16,6 +16,10 @@ console.log(obj4)
 
 const obj5 = {
     funcao1: function(){
-        //...
+        //fomra padrão
     },
+    function(){
+        //nova forma adcionada ao ES2015
+    }
 }
+console.log(obj5)
