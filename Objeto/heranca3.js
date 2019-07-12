@@ -28,5 +28,5 @@ console.log(key)
 
 for(let key in filha2){
     filha2.hasOwnProperty(key) ?
-    console.log(key) : console.log(`Por herança: ${key}`)
+    console.log(`Pertence: ${key}`) : console.log(`Por herança: ${key}`)
 }
