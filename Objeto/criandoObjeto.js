@@ -1,5 +1,5 @@
 /*
-//usanndo a notação literal
+//usando a notação literal
 const ojb1 = {}
 
 
