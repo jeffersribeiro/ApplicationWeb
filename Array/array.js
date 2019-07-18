@@ -39,5 +39,12 @@ aprovados.sort()
 //usando o metodo splice()
 
 let aprovados2 = ['carlos','Marcelo','Paula','Jefferson']
-aprovados2.splice(0,3)
+
+//removendo e adicionando, na verdade fucionou mesmo como uma troca!! 
+aprovados2.splice(1, 2,'trocando Elemt 1', 'trocando Elemt 2')
 console.log(aprovados2)
+//removendo
+aprovados2.splice(0,1)
+console.log(aprovados2)
+//adicionando
+aprovados2.splice(0,0,'Adionando Elemento 1','Adionando Elemento 2')

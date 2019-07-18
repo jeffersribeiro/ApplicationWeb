@@ -29,3 +29,4 @@ const contaLuz = new Lancamentos('lez',-220)
 const contas = new CicloFinanceiro(6 ,2018)
 contas.addLancamentos(salario, contaLuz)
 console.log(contas.sumario())
+
