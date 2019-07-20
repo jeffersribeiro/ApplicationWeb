@@ -34,7 +34,6 @@ delete aprovados[1]
 console.log(aprovados)
 //o metodo sort() não arrumou o array apos ser deletado
 aprovados.sort()
-*/
 
 //usando o metodo splice()
 
@@ -48,3 +47,4 @@ aprovados2.splice(0,1)
 console.log(aprovados2)
 //adicionando
 aprovados2.splice(0,0,'Adionando Elemento 1','Adionando Elemento 2')
+*/
