@@ -11,5 +11,6 @@ console.log('\n')
 aprovados.forEach(nome => console.log(`Nomes: ${nome}`))
 
 console.log('\n')
+console.log('\n')
 const exibirAprovados = (aprovados) => console.log(aprovados)
 aprovados.forEach(exibirAprovados)
