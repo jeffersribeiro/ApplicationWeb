@@ -1,9 +1,11 @@
 Array.prototype.map2 = function(callback){
-     for(i in arguments){
-        arguments[i]
-        return callback(this[i],i ,this)
+    const newArray = []
+    for(let i = 0; i< this.length; i++ ){
+     newArray.push(callback(this[i],i ,this))
     }
+    return newArray
 }
+
 const carrinho = [
     '{"nome": "Boracha" ,"preco": 3.45 }',
     '{"nome":"caderno", "preco": 13.90}',
