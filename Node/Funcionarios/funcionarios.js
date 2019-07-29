@@ -7,11 +7,9 @@ const axios = require('axios')
 
 axios.get(url).then(response =>{
     const functionarios =  response.data
-   
     const menorSalario = functionarios
       .filter(filtro1)
       .filter(filtro3)
       .reduce(filtro2)
-
     console.log(menorSalario)
 })
