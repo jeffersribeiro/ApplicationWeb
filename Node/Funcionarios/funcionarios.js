@@ -5,9 +5,13 @@ const axios = require('axios')
   const filtro2 = (func, funcAtual) => func.salario < funcAtual.salario ? func : funcAtual 
   const filtro3 = f => f.genero == 'F'
 
-module.exports = axios.get(url).then(response =>{
+axios.get(url).then(response =>{
     const functionarios =  response.data
-    console.log(functionarios.filter(filtro1)
-    .filter(filtro3)
-    .reduce(filtro2))
+   
+    const menorSalario = functionarios
+      .filter(filtro1)
+      .filter(filtro3)
+      .reduce(filtro2)
+
+    console.log(menorSalario)
 })

@@ -1,2 +1,1 @@
-const funcionarios_data = require('./funcionarios')
-funcionarios_data
+const menorSalario = require('./funcionarios.js')
