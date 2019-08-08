@@ -1,5 +1,6 @@
 const fs = require('fs')
 const caminho = __dirname + '/define.json'
+
 /*
 //assincrono...
 fs.readFile(caminho, 'utf-8', (err, conteudo) => {
