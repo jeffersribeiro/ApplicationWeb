@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <style>
+    input, textarea {
+        display: block;
+        margin-bottom: 20px;
+    }
+    input[type=radio]{
+        display: inline;
+    }
+    input[type=checkbox]{
+        display: inline;
+    }
+    .btn  {
+        display: inline; 
+        }
+        .div-select {
+            margin-bottom: 2%;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST">
+        <input type="hidden" name="id">
+        <input type="nome" name="nome" placeholder="nome">
+        <input type="password" name="senha" placeholder="senha">
+        <div class="teste">
+            <input type="radio" name="tipo" value="Admin"> <label>Admin</label>
+            <input type="radio" name="tipo" value="Regular"> <label>Regular</label>
+            <input type="radio" name="tipo" value="Professor"> <label>Professor</label>
+        </div>
+        <div>
+            <input type="checkbox" name="ativo"> <label>Ativo</label>
+            <input type="checkbox" name="desativo"> <label>Desativo</label>
+        </div>
+
+        <div class="div-select">
+        <select name="estado">
+            <option value="">selecione</option>
+            <option value="ac">Acre</option>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+        </select>
+        </div>
+        <div class="div-select">
+        <select name="Interesses" multiple size="5">
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Go">Go</option>
+            <option value="C#">C#</option>
+            <option value="C">C</option>
+        </select>
+    </div>
+        <textarea name="bio" cols="20" rows="5" placeholder="Digite sua BIO..."></textarea>
+        <div class="btn">
+            <button formaction="http://localhost:3003/usuarios">Incluir</button>
+            <button formaction="http://localhost:3003/usuarios/1">Alterar</button>
+            
+        </div>
+    </form>
+</body>
+</html>
