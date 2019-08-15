@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imagens</title>
+</head>
+<body>
+    <div wm-slide>
+        <p>
+            <img src="http://files.cod3r.com.br/curso-web/imagem1.jpg" 
+            alt="Muro da Cidade"
+            width="513" height="342"
+            title="Muro da Cidade por Tarso bessa">
+        </p>
+        <p>
+            <img src="http://files.cod3r.com.br/curso-web/imagem2.gif" 
+            alt="Intro Cod3r"
+            height="342"
+            title="Intro Cod3r por Leandro Moura">
+        </p>
+        <p class="circular">
+            <img src="http://files.cod3r.com.br/curso-web/imagem3.png" 
+            alt="Cidade Rio de Janeiro"
+            height="342"
+            title="Cidade Rio de Janeiro">
+        </p>
+
+        <p class="texto">            
+            <img src="http://files.cod3r.com.br/curso-web/avatar.jpg"
+            alt="Avatar"
+            height="50"
+            align="left"> 
+            Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, 
+            e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja
+            de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos,
+            como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. 
+            Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, 
+            e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+        </p>
+
+        <p class="cidade"></p>
+        
+        <p>
+            <picture>
+                <source srcset="http://files.cod3r.com.br/curso-web/logo-larga.png"
+                media="(min-width: 700px)">
+                <img src="http://files.cod3r.com.br/curso-web/logo-estreita.png" alt="logo-estreita">
+            </picture>
+        </p>
+    </div>
+    <style>
+        p {
+            display: none;
+            position: absolute;
+        }
+        .circular { 
+            width: 513px;
+            background-color: #4444;
+        }
+        .cidade {
+            width: 513px;
+            height: 342px;
+            background-image: url('http://files.cod3r.com.br/curso-web/imagem4.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%
+            
+        }
+        .texto {
+            width: 400px;
+            text-align: justify;
+        }
+        .texto img {
+            margin: 10px;
+        }
+    </style>
+    <script>
+
+    function mover(elem, inicio, fim, passo, callback){
+        const novoInicio = inicio - passo
+        if(novoInicio >= fim){
+            elem.style.left = novoInicio + 'px'
+            setTimeout(() => mover(elem, novoInicio, fim, passo, callback), 7)
+        } else {
+            callback()
+        }
+    }
+
+    function slider(){
+        const elementos = document.querySelectorAll('[wm-slide] > p')
+        const slides = Array.from(elementos)
+        exibirSlide(slides, slides[0])
+    }
+
+    function exibirSlide(slides, slide){
+        slide.style.display = 'block'
+        const inicio = innerWidth
+        const fim  = -slide.clientWidth
+
+        slide.style.left = `${inicio}px`
+
+        mover(slide, inicio, fim, 5, () => {
+            slide.style.display = 'none'
+           exibirSlide(slides, getProximo(slides, slide))
+        })
+    }
+
+    function getProximo(lista, atual){
+        const i = lista.indexOf(atual) + 1
+        return i < lista.length ? lista[i] : lista[0] 
+    }
+    slider()
+    </script>
+</body>
+</html>

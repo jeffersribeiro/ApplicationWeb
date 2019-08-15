@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tags Nâo Visuais</title>
+</head>
+<style>
+    * {
+        margin: 0%
+    }
+    div {
+        background-color: red;
+        /* display: inline; */
+        margin: 50px;
+        border: solid 1px;
+    }
+    span {
+        display: block;
+    }
+    .conteudo {
+        font-weight: bold;
+        font-size: 30px;
+        color: chocolate
+    }
+</style>
+<body>
+    <h1>Nâo Visuais</h1>
+    
+    <div>área 1</div>
+
+    <div>área 2</div>
+    <p>
+        Esse é um texto com <span class="conteudo">muitas palavras </span>e ponto.
+    </p>
+    <!-- div por padrão tem o display block -->
+    <div> div 1
+        <div> div 2
+            <div>div 3</div>
+        </div>
+    </div>
+    <!-- span por padrão tem o display inline -->
+
+    <span style="background-color: red; padding: 20px"> span 1
+        <span style="background-color: green; padding: 20px"> span 2
+            <span style="background-color: blue; padding: 20px">span 3</span>
+        </span>
+    </span>
+</body> 
+</html>

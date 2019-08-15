@@ -26,8 +26,8 @@
 </head>
 <body>
     <form method="POST">
-        <input type="hidden" name="id">
-        <input type="nome" name="nome" placeholder="nome">
+        <input type="hidden" name="id" value="3">
+        <input type="text" name="nome" placeholder="nome">
         <input type="password" name="senha" placeholder="senha">
         <div class="teste">
             <input type="radio" name="tipo" value="Admin"> <label>Admin</label>
@@ -60,7 +60,7 @@
         <textarea name="bio" cols="20" rows="5" placeholder="Digite sua BIO..."></textarea>
         <div class="btn">
             <button formaction="http://localhost:3003/usuarios">Incluir</button>
-            <button formaction="http://localhost:3003/usuarios/1">Alterar</button>
+            <button formaction="http://localhost:3003/usuarios/3">Alterar</button>
             
         </div>
     </form>
